@@ -18,4 +18,12 @@ app.put('/:id', (req, res) => {
     res.send(`Update the post with id: ${req.params.id}`)
 })
 
+app.patch('/:id', (req, res) => {
+    res.send(`modify the post with id: ${req.params.id}`)
+})
+
+app.delete('/:id', (req, res) => {
+    res.send(`Delete the post with id: ${req.params.is}`)
+})
+
 module.export = router
