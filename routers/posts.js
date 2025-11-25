@@ -1,6 +1,7 @@
 const express = require('express')
 const router = express.Router()
 
+// Per richiamarli su Postman, usare http://localhost:3000/api/posts/
 
 router.get('/', (req, res) => {
     res.send('show all the posts here')
@@ -23,7 +24,7 @@ router.patch('/:id', (req, res) => {
 })
 
 router.delete('/:id', (req, res) => {
-    res.send(`Delete the post with id: ${req.params.is}`)
+    res.send(`Delete the post with id: ${req.params.id}`)
 })
 
 module.exports = router
